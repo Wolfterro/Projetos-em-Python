@@ -1,2 +1,74 @@
-# Projetos-em-Python
- Pequenos projetos e testes simples em linguagem Python.
+# Projetos em Python
+### Pequenos projetos e testes simples em linguagem Python.
+
+### Descrição:
+
+###### Os programas apresentados neste repositório são apenas projetos simples e testes escritos na linguagem Python.
+###### Alguns destes programas são utilitários e scripts que podem ser utilizados no dia-a-dia para realização de algumas funções.
+###### Os programas aqui contidos foram desenvolvidos pensando na plataforma Linux e UNIX em geral, podendo não funcionar na plataforma Windows!
+
+### Programas:
+
+#### Heavy-R Downloader
+
+##### Descrição:
+
+###### Este é um simples programa que possui a função de baixar vídeos do site Heavy-R.
+###### O programa cria uma pasta no mesmo diretório que está sendo executado e nele cria os diretórios para os vídeos que irá baixar.
+###### Ao executar o programa, basta inserir a URL da página do vídeo desejado.
+###### Os vídeos serão baixados em formato '.mp4', com o nome do vídeo original (sem espaços).
+
+###### Aqui estão os possíveis argumentos que poderão ser inseridos na hora de executar o programa:
+
+
+    Uso: ./Heavy-R Downloader.py [Argumento] [ID] ...
+    -------------------------------------------------
+    
+    Argumentos:
+    -----------
+    '-h' ou '--help':    Mostra a tela de ajuda
+    '-u' ou '--url':     Utiliza URL's inseridas como argumentos para o script
+    
+    * Caso o modo 'URL' não consiga baixar o vídeo, utilize o modo simples, executando o 
+      programa sem uso de argumentos.
+
+##### Requisitos:
+- Python 2.x
+- grep
+- wget 1.16 ou superior
+
+##### Download:
+
+###### Você poderá baixar o programa com os comandos abaixo:
+
+    git clone https://github.com/Wolfterro/Projetos-em-Python.git
+    cd "Projetos-em-Python/Heavy-R Downloader"
+    chmod +x "HeavyRDownloader.py"
+    ./HeavyRDownloader.py
+
+#### GUROchan Image Downloader
+
+##### Descrição:
+
+###### Este programa possui a função de baixar imagens de um tópico escolhido do GUROchan.
+###### Ao executar o programa, ele irá criar, no mesmo diretório que está sendo executado, uma pasta chamada 'GUROchan'.
+###### Ao executá-lo, basta inserir a URL do tópico desejado.
+###### Nesta pasta, as imagens baixadas serão organizadas por pastas de acordo com a board onde o tópico reside.
+
+##### Requisitos:
+- Python 2.x
+- BeautifulSoup
+
+###### É necessário possuir o BeautifulSoup para que o programa possa funcionar.
+###### Caso não tenha o BeautifulSoup, utilize o comando abaixo:
+
+    sudo pip install beautifulsoup4
+
+##### Download:
+
+###### Você poderá baixar o programa com os comandos abaixo:
+
+    git clone https://github.com/Wolfterro/Projetos-em-Python.git
+    cd "Projetos-em-Python/GUROchan\ Image\ Downloader"
+    chmod +x "GUROchan-Image-Downloader.py"
+    ./GUROchan-Image-Downloader.py
