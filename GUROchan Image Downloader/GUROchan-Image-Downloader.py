@@ -99,7 +99,7 @@ def download_images(img, current, total):
 
 		with open(filename, "wb") as file:
 			while True:
-				data = response_download.read(4096)
+				data = response_download.read()
 				if not data:
 					break
 				file.write(data)
