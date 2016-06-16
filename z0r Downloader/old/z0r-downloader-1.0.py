@@ -7,7 +7,7 @@ import os
 import sys
 import urllib2
 
-version = "1.1"
+version = "1.0"
 
 # Verificando o Diretório Principal do Programa
 # =============================================
@@ -137,13 +137,8 @@ def main():
 		multiple = True
 		download_animation(None, multiple, argc)
 	elif sys.argv[1] == "-r" or sys.argv[1] == "--range":
-		try:
-			min = int(sys.argv[2])
-			max = int(sys.argv[3])
-		except Exception:
-			print("Erro! Falta valor mínimo ou máximo! Use '-h' ou '--help' para ajuda.")
-			print("Uso: z0r-downloader.py [-r/--range] [min] [max]")
-			sys.exit(1)
+		min = int(sys.argv[2])
+		max = int(sys.argv[3])
 
 		if min > sys.maxint or max > sys.maxint:
 			print("Erro! Valor mínimo ou máximo muito grande! Use '-h' ou '--help' para ajuda.")
