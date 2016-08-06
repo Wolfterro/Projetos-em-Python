@@ -8,11 +8,11 @@ import shutil
 
 #----------------------------------------
 # Criado por: Wolfterro
-# Versão: 1.1 - Python 2.x
-# Data: 05/08/2016
+# Versão: 1.0 - Python 2.x
+# Data: 01/06/2016
 #----------------------------------------
 
-version = "1.1"
+version = "1.0"
 
 # Menu de Ajuda
 # =============
@@ -71,13 +71,13 @@ def get_video_simple_mode(get_video_url):
 			shutil.rmtree(generated_folder)
 			return
 
-		os.system("grep -m 1 'src: ' index.html >> link.txt")
+		os.system("grep -m 1 'file: ' index.html >> link.txt")
 
 		print ("[Heavy-R Downloader] Baixando vídeo através do link encontrado ...")
 
 		file_link = open("link.txt")
 		linha_link = file_link.readlines()
-		get_download_link = str(linha_link[0]).replace("//			src: ", "").replace("'", "").replace(",", "").replace(" ", "").replace("\n", "").replace("\t", "")
+		get_download_link = str(linha_link[0]).replace("file: ", "").replace("'", "").replace(",", "").replace(" ", "").replace("\n", "")
 		file_link.close()
 
 		os.system("wget -O " + get_video_name + ".mp4 " + "\"" + get_download_link + "\"" + " -q --show-progress")
@@ -94,7 +94,6 @@ def get_video_simple_mode(get_video_url):
 		print ("[Heavy-R Downloader] Eliminando arquivos temporários e com falhas ...")
 		print ("\n=====================================================================\n")
 
-		
 		os.remove("link.txt")
 		os.remove("index.html")
 		os.chdir("..")
