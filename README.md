@@ -21,21 +21,24 @@
 ###### Aqui estão os possíveis argumentos que poderão ser inseridos na hora de executar o programa:
 
 
-    Uso: ./Heavy-R Downloader.py [Argumento] [ID] ...
-    -------------------------------------------------
+    Uso: ./Heavy-R Downloader.py [Argumento] [URL / ID]
+    ---------------------------------------------------
     
     Argumentos:
     -----------
     '-h' ou '--help':    Mostra a tela de ajuda
-    '-u' ou '--url':     Utiliza URL's inseridas como argumentos para o script
+    '-u' ou '--url':     Utiliza a URL inserida como argumento para o programa
+    '-i' ou '--id':     Utiliza a ID inserida como argumento para o programa
     
-    * Caso o modo 'URL' não consiga baixar o vídeo, utilize o modo simples, executando o 
-      programa sem uso de argumentos.
 
 ##### Requisitos:
 - Python 2.x
-- grep
-- wget 1.16 ou superior
+- BeautifulSoup
+
+###### É necessário possuir o BeautifulSoup para que o programa possa funcionar.
+###### Caso não tenha o BeautifulSoup, utilize o comando abaixo:
+
+    sudo pip install beautifulsoup4
 
 ##### Download:
 
