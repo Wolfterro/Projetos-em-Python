@@ -1,17 +1,17 @@
 # Projetos em Python
-### Pequenos projetos e testes simples em linguagem Python.
+## Pequenos projetos e testes simples em linguagem Python.
 
-### Descrição:
+## Descrição:
 
 ###### Os programas apresentados neste repositório são apenas projetos simples e testes escritos na linguagem Python.
 ###### Alguns destes programas são utilitários e scripts que podem ser utilizados no dia-a-dia para realização de algumas funções.
 ###### Os programas aqui contidos foram desenvolvidos pensando na plataforma Linux e UNIX em geral, podendo não funcionar na plataforma Windows!
 
-### Programas:
+## Programas:
 
-#### Heavy-R Downloader
+### Heavy-R Downloader
 
-##### Descrição:
+#### Descrição:
 
 ###### Este é um simples programa que possui a função de baixar vídeos do site Heavy-R.
 ###### O programa cria uma pasta no mesmo diretório que está sendo executado e nele cria os diretórios para os vídeos que irá baixar.
@@ -28,10 +28,10 @@
     -----------
     '-h' ou '--help':    Mostra a tela de ajuda
     '-u' ou '--url':     Utiliza a URL inserida como argumento para o programa
-    '-i' ou '--id':     Utiliza a ID inserida como argumento para o programa
+    '-i' ou '--id':      Utiliza a ID inserida como argumento para o programa
     
 
-##### Requisitos:
+#### Requisitos:
 - Python 2.x
 - BeautifulSoup
 
@@ -40,7 +40,7 @@
 
     sudo pip install beautifulsoup4
 
-##### Download:
+#### Download:
 
 ###### Você poderá baixar o programa com os comandos abaixo:
 
@@ -49,16 +49,16 @@
     chmod +x "HeavyRDownloader.py"
     ./HeavyRDownloader.py
 
-#### GUROchan Image Downloader
+### GUROchan Image Downloader
 
-##### Descrição:
+#### Descrição:
 
 ###### Este programa possui a função de baixar imagens de um tópico escolhido do GUROchan.
 ###### Ao executar o programa, ele irá criar, no mesmo diretório que está sendo executado, uma pasta chamada 'GUROchan'.
 ###### Ao executá-lo, basta inserir a URL do tópico desejado.
 ###### Nesta pasta, as imagens baixadas serão organizadas por pastas de acordo com a board onde o tópico reside.
 
-##### Requisitos:
+#### Requisitos:
 - Python 2.x
 - BeautifulSoup
 
@@ -67,7 +67,7 @@
 
     sudo pip install beautifulsoup4
 
-##### Download:
+#### Download:
 
 ###### Você poderá baixar o programa com os comandos abaixo:
 
@@ -76,9 +76,9 @@
     chmod +x "GUROchan-Image-Downloader.py"
     ./GUROchan-Image-Downloader.py
 
-#### z0r Downloader
+### z0r Downloader
 
-##### Descrição:
+#### Descrição:
 
 ###### Este é um simples programa que possui a função de baixar animações do site z0r.de.
 ###### O programa cria uma pasta no mesmo diretório que está sendo executado e nela serão armazenadas as animações.
@@ -103,10 +103,10 @@
     ------------------------------------------------
     Uso: z0r-downloader.py [-r/--range] [min] [max]
 
-##### Requisitos:
+#### Requisitos:
 - Python 2.x
 
-##### Download:
+#### Download:
 
 ###### Você poderá baixar o programa com os comandos abaixo:
 
@@ -114,3 +114,32 @@
     cd "Projetos-em-Python/z0r Downloader"
     chmod +x "z0r-downloader.py"
     ./z0r-downloader.py
+
+### Check'em
+
+#### Descrição:
+
+###### Este é um simples programa que possui a função de checar e verificar quantos dubs, trips, quads, quints e etc um tópico escolhido do 4chan possui.
+###### Ao executar o programa sem usar opções, ele irá pedir a URL do tópico e então irá mostrar e contar a quantidade de GETS e os seus tipos, mostrando o resultado no final.
+
+###### Aqui estão os possíveis argumentos que poderão ser inseridos na hora de executar o programa:
+
+
+    Uso: ./Checkem.py [Argumento] [URL]
+    -----------------------------------
+    
+    Argumentos:
+    -----------
+    '-u' ou '--url':    Utiliza a URL inserida como argumento para o programa
+    
+#### Requisitos:
+- Python 2.x
+
+#### Download:
+
+###### Você poderá baixar o programa com os comandos abaixo:
+
+    git clone https://github.com/Wolfterro/Projetos-em-Python.git
+    cd "Projetos-em-Python/Checkem"
+    chmod +x "Checkem.py"
+    ./Checkem.py
