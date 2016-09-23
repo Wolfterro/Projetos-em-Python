@@ -75,6 +75,8 @@ def printIPInformation(ipInformation, ipLocation):
 	if 'country' in ipInformation:
 		print("País: %s" % (ipInformation['country']))
 	print("Endereço (estimativa): %s" % (ipLocation))
+	if 'postal' in ipInformation:
+		print("Cod. Postal: %s" % (ipInformation['postal']))
 	if 'loc' in ipInformation:
 		print("Latitude/Longitude: %s" % (ipInformation['loc']))
 	if 'org' in ipInformation:
