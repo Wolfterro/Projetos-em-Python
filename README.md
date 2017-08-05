@@ -7,7 +7,7 @@
 ###### Alguns destes programas são utilitários e scripts que podem ser utilizados no dia-a-dia para realização de algumas funções.
 ###### Os programas aqui contidos foram desenvolvidos pensando na plataforma Linux e UNIX em geral, podendo não funcionar na plataforma Windows!
 
-## Programas:
+## Programas e Scripts:
 
 ### Heavy-R Downloader
  - Link: [Heavy-R Downloader](https://github.com/Wolfterro/Projetos-em-Python/tree/master/Heavy-R%20Downloader)
