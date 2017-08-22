@@ -25,16 +25,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 
+# Imports gerais
+# ==============
 from __future__ import print_function
 from time import sleep
 import sys
 
+# Abrindo arquivo e resgatando conteúdo
+# =====================================
 def openFile(file):
 	f = open(file, "r")
 	message = f.read()
 	f.close()
 	return message
 
+# Imprimindo mensagem na tela com intervalo
+# =========================================
 def typeSlow(message, time):
 	for i in message:
 		print(i, end="")
@@ -42,12 +48,16 @@ def typeSlow(message, time):
 		sleep(time)
 	print()
 
+# Método principal do script
+# ==========================
 def main():
 	if len(sys.argv) > 2:
 		typeSlow(openFile(str(sys.argv[1])), float(sys.argv[2]))
 	else:
-		print("Erro! Programa requer dois argumentos àÁÃÑçÇ!")
+		print("Erro! Programa requer dois argumentos!")
 		print("Uso: %s <ARQUIVO> <INTERVALO>" % (str(sys.argv[0])))
 
+# Inicializando script
+# ====================
 if __name__ == "__main__":
 	main()
