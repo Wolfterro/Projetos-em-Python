@@ -26,3 +26,6 @@
 
 ### TypeSlow
  - Link: [TypeSlow](https://github.com/Wolfterro/Projetos-em-Python/tree/master/TypeSlow)
+
+### FCutter
+ - Link: [FCutter](https://github.com/Wolfterro/Projetos-em-Python/tree/master/FCutter)
