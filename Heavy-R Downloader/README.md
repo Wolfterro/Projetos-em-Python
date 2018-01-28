@@ -1,4 +1,4 @@
-## Heavy-R Downloader
+## Heavy-R Downloader [DESCONTINUADO]
 
 #### Descrição:
 
