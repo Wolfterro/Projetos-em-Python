@@ -9,7 +9,10 @@
 
 ## Programas e Scripts:
 
-### Heavy-R Downloader
+### Heavier
+ - Link: [Heavier](https://github.com/Wolfterro/Projetos-em-Python/tree/master/Heavier)
+
+### Heavy-R Downloader [DESCONTINUADO]
  - Link: [Heavy-R Downloader](https://github.com/Wolfterro/Projetos-em-Python/tree/master/Heavy-R%20Downloader)
 
 ### GUROchan Image Downloader
