@@ -1,0 +1,6 @@
+{
+  "list_id_url": "",
+  "template_url_page": "http://www.heavy-r.com/video/%s/Generic_Video_Title/",
+  "video_dir": "Videos",
+  "download_max_tries": 3
+}
